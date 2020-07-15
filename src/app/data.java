@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author fariq
+ * @author riodelord
  */
 public class data extends javax.swing.JPanel {
 
@@ -72,8 +72,6 @@ public class data extends javax.swing.JPanel {
         txtPengembang = new javax.swing.JTextField();
         btnUbah = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        txtCari = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
         btnLogout = new javax.swing.JButton();
         btnupload = new javax.swing.JButton();
 
@@ -278,30 +276,6 @@ public class data extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(34, 12, 0, 0);
         add(jButton1, gridBagConstraints);
 
-        txtCari.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtCariKeyReleased(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 38;
-        gridBagConstraints.gridy = 15;
-        gridBagConstraints.gridwidth = 34;
-        gridBagConstraints.ipadx = 112;
-        gridBagConstraints.ipady = 6;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(34, 18, 0, 0);
-        add(txtCari, gridBagConstraints);
-
-        jLabel8.setText("Cari");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 72;
-        gridBagConstraints.gridy = 15;
-        gridBagConstraints.ipady = 10;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(34, 12, 0, 0);
-        add(jLabel8, gridBagConstraints);
-
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -413,15 +387,6 @@ public class data extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void txtCariKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCariKeyReleased
-        String key = txtCari.getText();
-        if (key.isEmpty()) {
-            loadData("");
-        } else {
-            loadData(key);
-        }
-    }//GEN-LAST:event_txtCariKeyReleased
-
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         addComp(new login());
     }//GEN-LAST:event_btnLogoutActionPerformed
@@ -458,12 +423,10 @@ public class data extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblData;
     private javax.swing.JTextField txtAlamat;
     private javax.swing.JTextField txtBrosur;
-    private javax.swing.JTextField txtCari;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtPengembang;
     private javax.swing.JTextField txtPerumahan;

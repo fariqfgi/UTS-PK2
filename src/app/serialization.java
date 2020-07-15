@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author fariq
+ * @author riodelord
  */
 
 public class serialization implements Serializable{

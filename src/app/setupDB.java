@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author fariq
+ * @author riodelord
  */
 public class setupDB extends javax.swing.JPanel {
 
@@ -253,7 +253,6 @@ public class setupDB extends javax.swing.JPanel {
         addComp(new login());
        
     }//GEN-LAST:event_btnSetupActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSetup;
