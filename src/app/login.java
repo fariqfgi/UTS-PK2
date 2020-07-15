@@ -24,7 +24,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author fariq
+ * @author riodelord
  */
 public class login extends javax.swing.JPanel {
 
